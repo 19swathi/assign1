@@ -2,6 +2,7 @@
 // This allows the usage of functions like cout and cin for console I/O
 // Optimized Bubble Sort Function
 void optimizedBubbleSort(int arr[], int n) {
+    //for swapping
     bool swapped;
 
     // Outer loop for the number of passes
