@@ -1,0 +1,63 @@
+Easy: Understanding Bubble Sort Manually sort the array ` [0,9,7,2] ` using the bubble sort technique.
+ write down each step of the process.
+a)
+  given array is [ 0, 9 , 7 , 2 ]
+  lets apply Bubble sort algorithm 
+  now the index of given array is starts from 0 to 3 because the size of array is 4 .
+  step1 : 
+      > Compare 0 and 9,here "9" is greater than "0" no swap: [0, 9, 7, 2]
+      > Compare 9 and 7, swap because 9 > 7: [0, 7, 9, 2]
+      > Compare 9 and 2, swap because 9 > 2: [0, 7, 2, 9]
+  after one loop now the array is [0,7,2,9]
+  step2 :
+      > Compare 0 and 7,here "7" is greater than "0" no swap: [0, 7, 2, 9]
+      > Compare 7 and 2, swap because 7 > 2: [0, 2, 7, 9]
+  step3 :
+      > Compare 0 and 2, no swap: [0, 2, 7, 9]
+      > Compare 2 and 7, no swap: [0, 2, 7, 9]
+      > Compare 7 and 9, no swap: [0, 2, 7, 9]
+ .'. After applying Bubble Sort algorithm the array is in ascending order .
+
+
+2. Intermediate: Trace the Bubble Sort Provided the unsorted array ` [50,40,30,20,10] ` and trace the bubble sort algorithm step by step, 
+  showing the changes in the array after each pass.
+A)
+  given array is [ 50, 40, 30, 20, 10]
+  lets apply Bubble sort algorithm 
+  now the index of given array is starts from 0 to 4 because the size of array is 5 .
+  step1 : 
+      > Compare 50 and 40, swap because 50 is greater than 40: [40, 50, 30, 20, 10]
+      > Compare 50 and 30, swap because 50 > 30: [40, 30, 50, 20, 10]
+      > Compare 50 and 20, swap because 50 is greater than 20: [40, 30, 20, 50, 10]
+      > Compare 50 and 10, swap because 50 > 10: [40, 30, 20, 10, 50]
+   after first loop now the given array is [40, 30, 20, 10, 50].
+
+  step2 :
+     > Compare 40 and 30, swap because 40 > 30: [30, 40, 20, 10, 50]
+     > Compare 40 and 20, swap because 40 is greater than 20: [30, 20, 40, 10, 50]
+     > Compare 40 and 10, swap because 40 > 10: [30, 20, 10, 40, 50]
+   after second loop now the given array is [30, 20, 10, 40, 50].
+
+  step3 :
+      > Compare 30 and 20, swap because 30 is greater than 20: [20, 30, 10, 40, 50]
+      > Compare 30 and 10, swap because 30 > 10: [20, 10, 30, 40, 50]
+  after third loop now the given array is [20, 10, 30, 40, 50].
+
+  step4 :
+      > Compare 20 and 10, swap because 20 is greater than 10: [10, 20, 30, 40, 50]
+  .'. After applying Bubble Sort algorithm the array is in ascending order .
+5. Advanced: Comparison with Other Sorting Algorithms Compare the bubble sort algorithm with quicksort and merge sort. 
+  Discuss the advantages and disadvantages of bubble sort in different scenarios.
+  Additionally, analyze when it might be preferable to use other sorting algorithms.
+A).
+  Bubble sort, quicksort, and merge sort are all sorting algorithms but different in the time complexity .
+  Bubble Sort:
+   >Simple to understand and implement.
+   >it is use for small date sets .
+  Quick sort :
+   >Quicksort has an average-case time complexity of O(n log n), making it much more efficient than bubble sort for large datasets.
+   >it has worst time complexity and not suitable for big data set.
+  Merge sort:
+   >Merge sort is well-suited for sorting linked lists since it doesn't require random access to elements.
+   >it has high space complexity while compare to other sorting algorithm .
+
