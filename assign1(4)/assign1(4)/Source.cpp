@@ -46,6 +46,6 @@ int main() {
     // Display the sorted array
     std::cout << "Sorted array: ";
     printArray(arr, n);
-
+   // The program executed successfully, returning 0 as the exit status code
     return 0;
 }
